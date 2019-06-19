@@ -19,6 +19,8 @@ Par ailleurs, on peut voir que la publication de ce fichier a été faite le
 19 décembre 2012. On peut donc en déduire que l'utilisateur a chiffré le fichier 
 avant cette date. 
 
+<img src="report/pictures/date.PNG" alt="date creation">
+
 ## Attaque
 
 Nous allons donc faire une attaque par brute force. Pour cela, on va essayer
@@ -28,8 +30,10 @@ Pour chaque initialisation de la seed, on génère la clé associé. Puis,
 on déchiffre le fichier **data/oDjbNkIoLpaMo.bz2.crypt**. 
 Ensuite, on regarde si le format du fichier déchiffré correspond au 
 format **bzip2** : son nombre magique correspond à la suite "BZ" et est suivi 
-du caractère "h". Si ce fichier est bien un bzip2, alors nous avons trouvé 
+du caractère "h". Si ce fichier est bien un bzip2, alors nous aurons trouvé 
 le déchiffrement du fichier **data/oDjbNkIoLpaMo.bz2.crypt**.
+
+<img src="report/pictures/execution.PNG" alt="execution">
 
 ## Morale
 
